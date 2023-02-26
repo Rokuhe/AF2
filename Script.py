@@ -195,7 +195,7 @@ Pʟᴇᴀsᴇ Cʜᴇᴄᴋ Yᴏᴜʀ Sᴘᴇʟʟɪɴɢ 🤧</b>
     
 • ꜰᴜʟʟ ɴᴀᴍᴇ:- Sanjana
 ᴜsᴇʀɴᴀᴍᴇ:- @oneCini
-ᴘᴇʀᴍᴀɴᴇɴᴛ ᴅᴍ ʟɪɴᴋ:- <a href='https://commentsbot.xyz/thread/Q0W6myFD-'>Sanjana</a></b>
+ᴘᴇʀᴍᴀɴᴇɴᴛ ᴅᴍ ʟɪɴᴋ:- <a href='https://t.me/+awyMHD2-UZo4NzNh'>Sanjana</a></b>
 """
 
     CYNITE_IMDB = """
@@ -223,8 +223,7 @@ Pʟᴇᴀsᴇ Cʜᴇᴄᴋ Yᴏᴜʀ Sᴘᴇʟʟɪɴɢ 🤧</b>
 • /batch <code>- ᴛᴏ ᴄʀᴇᴀᴛᴇ ʟɪɴᴋ ғᴏʀ ᴍᴜʟᴛɪᴘʟᴇ ᴍᴇᴅɪᴀ.<code>
 
 <b>Exᴀᴍᴘʟᴇ:</b>
-<code>/batch https://t.me/OneCini
-https://t.me/OneCini </code>
+<code>/batch https://t.me/OneCini 1 https://t.me/OneCini 3 </code>
 """
 
     CYNITE_CNL = """
