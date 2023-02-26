@@ -13,49 +13,49 @@ def is_enabled(value, default):
 # Bot information
 PORT = environ.get("PORT", "8080")
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', '1923471'))
-API_HASH = environ.get('API_HASH', 'fcdc178451cd234e63faefd38895c991')
-BOT_TOKEN = environ.get('BOT_TOKEN', "6023399726:AAGZV_TJn9pEw5JxIMS0TXtT0SVmLoJKG7w")
+API_ID = int(environ.get('API_ID', '26364421'))
+API_HASH = environ.get('API_HASH', '72c7598f883fa1b077358d6c86071654')
+BOT_TOKEN = environ.get('BOT_TOKEN', "6288597659:AAHfYlOVP7mhI3mT3AmiaNCQQZ4cJ0k-idY")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
-PICS = (environ.get('PICS', 'https://telegra.ph/file/5c586e00f34665267ab5b.jpg')).split()
+PICS = (environ.get('PICS', 'https://pasteboard.co/iTV9WsyEu079.jpg https://pasteboard.co/rsLHLDz7Au0Y.jpg https://pasteboard.co/4CuLohR1PwBm.jpg https://pasteboard.co/EBXRng9LzrDo.jpg https://pasteboard.co/KMZFi83vIq1b.jpg https://pasteboard.co/8GosXNaPggzR.jpg https://pasteboard.co/ljMCxgoyJkD1.jpg')).split()
 NOR_IMG = environ.get("NOR_IMG", "https://telegra.ph/file/94750f782f45f592b823f.jpg")
 SPELL_IMG = environ.get("SPELL_IMG", "https://telegra.ph/file/8ee413afc32e5b393e790.jpg")
 NEWGRP = environ.get("NEWGRP", "https://telegra.ph/file/07c14729659c7c2b99f5a.jpg")
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '880087645 1441767180').split( )]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001188070894 -100169224324').split( )]
-auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '880087645 1441767180').split( )]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split( )]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001666032290').split( )]
+auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split( )]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
-auth_channel = environ.get('AUTH_CHANNEL', '')
-auth_grp = environ.get('AUTH_GROUP')
+auth_channel = environ.get('AUTH_CHANNEL', '-1001674217904')
+auth_grp = environ.get('AUTH_GROUP', '-1001710006830')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://video:video@cluster0.gp0rn.mongodb.net/?retryWrites=true&w=majority")
-DATABASE_NAME = environ.get('DATABASE_NAME', "asuranj")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://random:random@cluster0.tb63h.mongodb.net/cluster0?retryWrites=true&w=majority")
+DATABASE_NAME = environ.get('DATABASE_NAME', "irobot")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'AutofilterBot')
 
 # Channel Button Links
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/Asuranmoviefinder1')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/Asuranmoviefinder1')
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/Asuranmoviefinder1')
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+hPquUHH5G3ljNjRh')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/+qXETDxICDIQzMmRh')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/+hPquUHH5G3ljNjRh')
 MSG_ALRT = environ.get('MSG_ALRT', 'Share and Support Us')
 
 # Custom Chats
-SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', -1001797596826))
-FILE_CHANNEL = int(environ.get('FILE_CHANNEL', -1001810806290))
-FILE_CHANNEL_LINK = environ.get('FILE_CHANNEL_LINK', 't.me/Asuranmoviefinder1')
-HOW_DWLD_LINK = environ.get('HOW_DWLD_LINK', 'https://t.me/demoshort')
+SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', -1001710006830))
+FILE_CHANNEL = int(environ.get('FILE_CHANNEL', -1001784510848))
+FILE_CHANNEL_LINK = environ.get('FILE_CHANNEL_LINK', 'https://t.me/+qXETDxICDIQzMmRh')
+HOW_DWLD_LINK = environ.get('HOW_DWLD_LINK', 'https://t.me/hw2use')
 
 # Log Channels
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001188070894'))
-RQST_LOG_CHANNEL = int(environ.get('RQST_LOG_CHANNEL', '-1001188070894'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001666032290'))
+RQST_LOG_CHANNEL = int(environ.get('RQST_LOG_CHANNEL', '-1001666032290'))
 
 # Bot Options
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
@@ -85,8 +85,8 @@ SPL_DELETE_TIME = int(environ.get('SPL_DELETE_TIME', 15))
 
 # URL SHORTNER
 
-URL_SHORTENR_WEBSITE = environ.get('URL_SHORTENR_WEBSITE', 'e2share.in')
-URL_SHORTNER_WEBSITE_API = environ.get('URL_SHORTNER_WEBSITE_API', '528086f38b46c69784f0a97bd99430461fcddda2')
+URL_SHORTENR_WEBSITE = environ.get('URL_SHORTENR_WEBSITE', 'tnlink.in')
+URL_SHORTNER_WEBSITE_API = environ.get('URL_SHORTNER_WEBSITE_API', '0a098aa40c88afa982fb8e2ff9aa8b731e712f8c')
 
 LOG_STR = "Current Cusomized Configurations are:-\n"
 LOG_STR += ("IMDB Results are enabled, Bot will be showing imdb details for you queries.\n" if IMDB else "IMBD Results are disabled.\n")
